@@ -36,6 +36,7 @@ export class BookService {
     book.price = updateBookDto.price;
     book.author = updateBookDto.author;
     book.id = id;
+
     return this.bookRepository.update(id, book);
   }
 
